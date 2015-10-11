@@ -17,4 +17,4 @@ Class Week {
     Week (Lesson mon[10], Lesson tue[10], Lesson wed[10], Lesson thu[10], Lesson fri[10], Lesson sat[10])
         {monday = mon; tuesday = tue; wednesday = wed; thursday = thu; friday = fri; saturday = sat;}
 };
-// Работаем уже с рссписанием. Расписание для одново класса на неделю. Все рассписание предлагается хранить как массив Week для всех классов
+// Работаем уже с расписанием. Расписание для одного класса на неделю. Все рассписание предлагается хранить как массив Week для всех классов
