@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    cout << "Hello, World!" << endl;
+    cout << "Hello, DRUS!" << endl;
     return 0;
 }
