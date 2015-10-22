@@ -3,8 +3,8 @@
 //
 
 #include <string>
-#include <vector>
 #include <map>
+#include <vector>
 
 #ifndef INT_SCHEDULE_STRUCTURES_H
 #define INT_SCHEDULE_STRUCTURES_H
@@ -13,7 +13,14 @@ class Teacher {
 public:
     std::string teacher_name_;
     int work_hours_[6][2];                 // start & end of work hours, first and last lesson available
-    Teacher(){};
+    Teacher(){}
+    void set_name(const std::string &teacher_name) {
+        teacher_name_ = teacher_name;
+    }
+    void set_work_time(const int &day, const int &work_start, const int &work_end) {
+        work_hours_[day][0] = work_start;
+        work_hours_[day][1] = work_end;
+    }
 };
 
 class Lesson {
@@ -37,7 +44,5 @@ public:
     std::map<Lesson*, int> study_plan_;                    // study plan, pairs (lesson - how many hours per week)
     StudentGroup(){};
 };
-
-class
 
 #endif //INT_SCHEDULE_STRUCTURES_H

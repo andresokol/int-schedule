@@ -1,6 +1,7 @@
 #include "header.h"
 
 int main() {
-    cout << "Hello, DRUS!" << endl;
+    std::vector<Teacher> input;
+    get_teacher_from_file(input);
     return 0;
 }
